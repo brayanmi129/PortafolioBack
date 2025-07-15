@@ -1,0 +1,39 @@
+// /sockets/index.js
+
+module.exports = (io, db) => {
+  io.on("connection", async (socket) => {
+    console.log("Usuario conectado:", socket.id);
+
+    // ✅ Al conectar, enviar TODAS las notas actuales
+    const snapshot = await db.collection("notes").get();
+    const notes = snapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+    socket.emit("initial-notes", notes);
+
+    // ✅ Crear nota
+    socket.on("create-note", async (note) => {
+      console.log("Nota creada:", note);
+      const docRef = await await db.collection("notes").doc(note.id.toString()).set(note);
+      const newNote = { id: docRef.id, ...note };
+      io.emit("note-created", newNote);
+    });
+
+    // ✅ Actualizar nota
+    socket.on("update-note", async (note) => {
+      await db.collection("notes").doc(note.id.toString()).update(note);
+      io.emit("note-updated", note);
+    });
+
+    // ✅ Eliminar nota
+    socket.on("delete-note", async (id) => {
+      await db.collection("notes").doc(id.toString()).delete();
+      io.emit("note-deleted", id);
+    });
+
+    socket.on("disconnect", () => {
+      console.log("Usuario desconectado:", socket.id);
+    });
+  });
+};

@@ -1,0 +1,164 @@
+{
+  "2": [
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Holaaa"
+        }
+      ]
+    },
+    {
+      "parts": [
+        {
+          "text": "Hola!  ¿Cómo estás?\n"
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "bien y tu?"
+        }
+      ]
+    },
+    {
+      "parts": [
+        {
+          "text": "¡Bien, gracias!  Estoy listo para ayudarte con lo que necesites.\n"
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Hola"
+        }
+      ]
+    },
+    {
+      "parts": [
+        {
+          "text": "Hola! ¿Qué tal está todo?\n"
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "estoy usando tu api con el modelo gemini-1.5-flash, cuantas solicitudes de este estilo con texto tengo para usaer en el plan gartis, sin ningun cobro?"
+        }
+      ]
+    },
+    {
+      "parts": [
+        {
+          "text": "No tengo acceso a tu historial de uso de la API ni a los detalles específicos de tu plan.  La cantidad de solicitudes que puedes realizar con el modelo Gemini-1.5-Flash en el plan gratuito depende de los términos y condiciones del plan gratuito que Google haya establecido en el momento en que te registraste.  Esa información se encuentra en la documentación de la API de Google y/o en tu panel de control de la cuenta.\n\nPara saber con certeza cuántas solicitudes te quedan, te recomiendo que consultes directamente la documentación de la API de Google o tu panel de cuenta de Google Cloud.  Allí encontrarás información precisa sobre tu límite de uso y tu consumo actual.\n"
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "pero tu no sabes cuantos son en total de manera grtuita?"
+        }
+      ]
+    },
+    {
+      "parts": [
+        {
+          "text": "No, no lo sé.  Google no comparte públicamente ese número exacto. La cantidad de solicitudes gratuitas varía y está sujeta a cambios según las políticas de Google.  Como un gran modelo de lenguaje, no tengo acceso a la información privada de cuentas de usuario.\n"
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "holaa"
+        }
+      ]
+    },
+    {
+      "parts": [
+        {
+          "text": "Hola! ¿En qué te puedo ayudar hoy?\n"
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "asdasdasd"
+        }
+      ]
+    },
+    {
+      "parts": [
+        {
+          "text": "No entiendo lo que significa \"asdasdasd\".  ¿Puedes reformular tu pregunta o solicitud?\n"
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "asdasdasd"
+        }
+      ]
+    },
+    {
+      "parts": [
+        {
+          "text": "Sigue sin tener sentido.  Si necesitas ayuda con algo, por favor, explícamelo con palabras que pueda entender.\n"
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "holasdadsad"
+        }
+      ]
+    },
+    {
+      "parts": [
+        {
+          "text": "Parece que estás escribiendo al azar.  ¿Hay algo en lo que pueda ayudarte?\n"
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Ahhh perdon"
+        }
+      ]
+    },
+    {
+      "parts": [
+        {
+          "text": "No te preocupes. ¿En qué puedo ayudarte ahora?\n"
+        }
+      ],
+      "role": "model"
+    }
+  ]
+}
