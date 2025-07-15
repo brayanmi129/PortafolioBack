@@ -12,8 +12,7 @@ const IA = require("./routes/IA.js");
 const { db } = require("./firebase/firebase.js");
 
 //variables globales
-let port = 3000;
-
+const port = process.env.PORT || 3000;
 // Crear la aplicación Express
 const app = express();
 app.use(cors());
