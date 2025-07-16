@@ -20,10 +20,16 @@ module.exports = (io, db) => {
       io.emit("note-created", newNote);
     });
 
+    socket.on("drag-note", (note) => {
+      socket.broadcast.emit("note-dragged", note);
+      console.log("Nota arrastrada:", note.x, note.y);
+    });
+
     // ✅ Actualizar nota
     socket.on("update-note", async (note) => {
       await db.collection("notes").doc(note.id.toString()).update(note);
       io.emit("note-updated", note);
+      console.log("Nota actualizada:", note);
     });
 
     // ✅ Eliminar nota
