@@ -40,9 +40,9 @@ app.use(express.json());
 app.use("/api/notes", notesRoutes); // Tus rutas serán accesibles como /api/notes
 app.use("/api/ia", IA); // Tus rutas de IA serán accesibles como /api/ia
 
-// Ruta / que responde con "Hola"
-app.get("/", (req, res) => {
-  res.send("Hola");
+app.get("/*", (req, res) => {
+  //enviar el html de dist
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
 server.listen(port, () => {
