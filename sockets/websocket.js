@@ -26,9 +26,10 @@ module.exports = (io, db) => {
     });
 
     // ✅ Actualizar nota
-    socket.on("update-note", async (note) => {
+    socket.on("update-note", async (note, client) => {
+      console.log("Client:", client);
       await db.collection("notes").doc(note.id.toString()).update(note);
-      io.emit("note-updated", note);
+      io.emit("note-updated", note, client);
       console.log("Nota actualizada:", note);
     });
 
@@ -38,7 +39,12 @@ module.exports = (io, db) => {
       io.emit("note-deleted", id);
     });
 
+    socket.on("mouse-move", ({ x, y }) => {
+      socket.broadcast.emit("mouse-update", { clientId: socket.id, x, y });
+    });
+
     socket.on("disconnect", () => {
+      socket.broadcast.emit("user-disconnected", socket.id);
       console.log("Usuario desconectado:", socket.id);
     });
   });
