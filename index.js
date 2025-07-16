@@ -42,7 +42,9 @@ app.use("/api/ia", IA); // Tus rutas de IA serán accesibles como /api/ia
 
 app.get("/*", (req, res) => {
   //enviar el html de dist
-  res.sendFile(path.join(__dirname, "dist", "index.html"));
+  // res.sendFile(path.join(__dirname, "dist", "index.html"));
+  //enviar un api is runing
+  res.status(200).json({ message: "API is running" });
 });
 
 server.listen(port, () => {
