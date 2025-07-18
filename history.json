@@ -1,4 +1,38 @@
 {
+  "1": [
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Hola"
+        }
+      ]
+    },
+    {
+      "parts": [
+        {
+          "text": "Hola! ¿Cómo estás?\n"
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "bien y tu?"
+        }
+      ]
+    },
+    {
+      "parts": [
+        {
+          "text": "¡Bien, gracias!  ¿En qué te puedo ayudar hoy?\n"
+        }
+      ],
+      "role": "model"
+    }
+  ],
   "2": [
     {
       "role": "user",
@@ -156,6 +190,90 @@
       "parts": [
         {
           "text": "No te preocupes. ¿En qué puedo ayudarte ahora?\n"
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Hola"
+        }
+      ]
+    },
+    {
+      "parts": [
+        {
+          "text": "Hola! ¿Cómo estás?\n"
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Hola"
+        }
+      ]
+    },
+    {
+      "parts": [
+        {
+          "text": "Hola! ¿Qué tal todo? ¿Necesitas algo?\n"
+        }
+      ],
+      "role": "model"
+    }
+  ],
+  "1752869021692": [
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "Hola"
+        }
+      ]
+    },
+    {
+      "parts": [
+        {
+          "text": "Hola!  How can I help you today?\n"
+        }
+      ],
+      "role": "model"
+    },
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "hablas en español"
+        }
+      ]
+    },
+    {
+      "parts": [
+        {
+          "text": "Sí, hablo español. ¿En qué te puedo ayudar?\n"
+        }
+      ],
+      "role": "model"
+    }
+  ],
+  "1752869022276": [
+    {
+      "role": "user",
+      "parts": [
+        {
+          "text": "hola"
+        }
+      ]
+    },
+    {
+      "parts": [
+        {
+          "text": "Hola! ¿Cómo estás?\n"
         }
       ],
       "role": "model"
