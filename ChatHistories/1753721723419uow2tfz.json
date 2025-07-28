@@ -1,0 +1,34 @@
+[
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "HYola"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "text": "That appears to be a misspelling.  Are you looking for something that sounds like \"Hyola\"?  Perhaps you could provide more context, or what you were intending to type.\n"
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "hola"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "text": "Hola!  (Hello!)\n"
+      }
+    ],
+    "role": "model"
+  }
+]

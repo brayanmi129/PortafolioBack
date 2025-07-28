@@ -14,7 +14,9 @@ admin.initializeApp({
     clientC509CertUrl: process.env.FIREBASE_CLIENT_X509_CERT_URL,
     universeDomain: process.env.FIREBASE_UNIVERSE_DOMAIN,
   }),
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
 });
 
 const db = admin.firestore();
-module.exports = { db };
+const storage = admin.storage().bucket();
+module.exports = { db, storage };

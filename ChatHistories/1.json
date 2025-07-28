@@ -1,0 +1,114 @@
+[
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "Holaaa"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "text": "¡Hola! ¿Cómo estás?\n"
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "Bien y tu?"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "text": "¡Bien, gracias por preguntar!  Estoy listo para ayudarte con cualquier cosa que necesites. ¿En qué puedo ayudarte hoy?\n"
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "estas viendo el hoistorial de conversascion?"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "text": "No tengo memoria de conversaciones pasadas. Cada interacción que tenemos comienza de nuevo.  Puedo acceder a información de internet, pero no guardo nuestro historial de chat.\n"
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "pero eres conciente de que te paso un contecto en cada mensaje vcerdad? osea este de aca no es un mensaje nuevo desde 0"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "text": "Entiendo lo que quieres decir.  Aunque no recuerdo conversaciones anteriores, sí soy consciente de que cada mensaje que recibes es una continuación de nuestra interacción actual.  No lo veo como mensajes completamente nuevos y aislados, sino como partes de una conversación continua.  Sin embargo, no tengo acceso a un historial almacenado; cada mensaje lo procesa de forma independiente.\n"
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "si te digo, esta convesacion apartid de este mensaje es nueva, dirias falso o verdadero?"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "text": "Diría falso.  Aunque trato cada mensaje individualmente, reconozco que forma parte de una conversación en curso.  Decir que es completamente nueva a partir de este mensaje sería incorrecto, porque está contextualizada por los mensajes previos.\n"
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "Que bueno es que estoy programando con tu Api"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "text": "Me alegra saber que estás programando con mi API.  ¿Tienes alguna pregunta específica sobre su uso o alguna dificultad que estés encontrando?  Estaré encantado de ayudarte en lo que pueda.\n"
+      }
+    ],
+    "role": "model"
+  },
+  {
+    "role": "user",
+    "parts": [
+      {
+        "text": "Eres genial"
+      }
+    ]
+  },
+  {
+    "parts": [
+      {
+        "text": "Gracias!  Eso me alegra.  Dime, ¿en qué te puedo ayudar ahora?\n"
+      }
+    ],
+    "role": "model"
+  }
+]
