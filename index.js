@@ -7,6 +7,7 @@ const cors = require("cors");
 require("dotenv").config(); // Importar la configuración de las variables de entorno
 const notesRoutes = require("./routes/PinnedNotes.js");
 const IA = require("./routes/IA.js");
+const finanzApp = require("./routes/finanzApp.js");
 
 //DB firestore
 const { db } = require("./firebase/firebase.js");
@@ -39,6 +40,7 @@ app.use(express.json());
 
 app.use("/api/notes", notesRoutes); // Tus rutas serán accesibles como /api/notes
 app.use("/api/ia", IA); // Tus rutas de IA serán accesibles como /api/ia
+app.use("/api/finanzApp", finanzApp); // Rutas de la aplicación financiera
 
 app.get("/*", (req, res) => {
   //enviar el html de dist
